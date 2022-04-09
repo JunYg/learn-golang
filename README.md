@@ -2,7 +2,9 @@
 
 Golang 学习记录文档
 
-## 构建执行异常
+## 编译
+
+### 编译异常问题
 
 * module *** is not in GOROOT
   1. 修改 Go 环境变量配置 `GO111MODULE="false"`
