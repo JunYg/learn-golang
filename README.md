@@ -51,6 +51,7 @@ Golang 的主要特征：
   - delete
   - make
   - cap
+  - len
 - chan 类型
   - make
   - close
