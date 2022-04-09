@@ -71,7 +71,7 @@ Golang 的主要特征：
 
 ### `init()` 包初始化函数
 
-init 函数是用于程序执行前做包的初始化的函数，比如初始化包里的变量等。每个包可以拥有多个 init 函数，包的每个源文件也可以拥有多个 init 函数，同一个包中多个 init 函数的执行顺序 go 语言没有明确的定义(说明)，不同包的 init 函数按照包导入的依赖关系决定该初始化函数的执行顺序，**init函数不能被其他函数调用，而是在main函数执行之前，自动被调用**；
+init 函数是用于程序执行前做包的初始化的函数，比如初始化包里的变量等。每个包可以拥有多个 init 函数，包的每个源文件也可以拥有多个 init 函数，同一个包中多个 init 函数的执行顺序 go 语言没有明确的定义(说明)，不同包的 init 函数按照包导入的依赖关系决定该初始化函数的执行顺序，**init 函数不能被其他函数调用，而是在 main 函数执行之前，自动被调用**；
 
 特点：
 - 对同一个 go 文件的 `init()` 调用顺序是从上到下的。
@@ -84,7 +84,29 @@ init 函数是用于程序执行前做包的初始化的函数，比如初始化
 
 Go 语言的默认入口函数，只能用于 main 包中，且只能定义一个。
 
-## 
+## 命令
+
+`go <command> [arguments]`
+
+### command
+- bug，start a bug report
+-	build，compile packages and dependencies（编译指定的源码文件或代码包以及它们的依赖包）
+-	clean，remove object files and cached files（删除执行其它命令时产生的一些文件和目录）
+-	doc，show documentation for package or symbol（打印附于 Go 语言程序实体上的文档）
+-	env，print Go environment information（打印 Go 语言的环境信息）
+-	fix，update packages to use new APIs（把指定代码包的所有 Go 语言源码文件中的旧版本代码修正为新版本的代码）
+-	fmt，gofmt (reformat) package sources
+-	generate，generate Go files by processing source
+-	get，add dependencies to current module and install them（根据要求和实际情况从互联网上下载或更新指定的代码包及其依赖包，并对它们进行编译和安装）
+-	install，compile and install packages and dependencies（编译并安装指定的代码包及它们的依赖包）
+-	list，list packages or modules（列出指定的代码包的信息）
+-	mod，module maintenance
+-	run，compile and run Go program（编译并运行命令源码文件）
+-	test，test packages（对Go语言编写的程序进行测试）
+-	tool，run specified go tool（交互式的访问概要文件的内容）
+-	version，print Go version
+-	vet，report likely mistakes in packages（检查 Go 语言源码中静态错误的简单工具）
+
 
 
 
