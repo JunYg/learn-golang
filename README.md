@@ -38,5 +38,45 @@ Golang 的主要特征：
 ### 内置函数
 
 不需要显示导入就可以使用的函数
+- comlex 类型
+  - real
+  - imag
+- slice 类型
+  - append
+  - len
+  - copy
+  - cap
+  - make
+- map 类型
+  - delete
+  - make
+  - cap
+- chan 类型
+  - make
+  - close
+  - len
+- 内存操作
+  - make
+  - new
+- goroutine
+  - panic
+  - recover
+- print、println
+  建议使用 `fmt` 包进行打印
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
