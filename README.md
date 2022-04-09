@@ -63,8 +63,16 @@ Golang 的主要特征：
   - panic
   - recover
 - print、println
-  建议使用 `fmt` 包进行打印
+  建议使用 fmt 包进行打印
 
+## [`init()`、`main()`](https://www.topgoer.cn/docs/golang/chapter02-3)
+
+
+### init()
+
+### main()
+
+## 
 
 
 
