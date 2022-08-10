@@ -31,7 +31,7 @@ Golang 的主要特征：
 - array，固定长度数组
 
 引用类型
-- slice，序列数组
+- slice，切片
 - map，映射
 - chan，管道
 
